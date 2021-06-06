@@ -1,0 +1,188 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* grid section 1 */
+
+.grid-container {
+  height: 100vh;
+  width: 100%;
+  background: #738580;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 0.4fr 1.2fr;
+  grid-template-rows: 1.5fr 0.8fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "cv competences"
+    "cv motivation";
+}
+
+.section1 {
+  padding: 10px;
+  height: 100vh;
+}
+
+.cv {
+  grid-area: cv;
+  background-color: #474440;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.competences {
+  grid-area: competences;
+  background-color: #970c10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.motivation {
+  grid-area: motivation;
+  background-color: #bfcad0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+/* Style tableau 1 */
+.container1 {
+  position: absolute;
+  width: 20%;
+  height: 90%;
+  background: #f1f1f1;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+.grid-container-competences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "definition information";
+}
+
+.definition {
+  grid-area: definition;
+}
+
+.information {
+  grid-area: information;
+}
+
+.photo-profil {
+  position: absolute;
+  width: 20px;
+}
+
+.container2 {
+  position: absolute;
+  width: 65%;
+  height: 55%;
+  background: #f1f1f1;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+ul {
+  background: #f1f1f1;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  border-bottom: 1px solid #333;
+}
+li {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+li:not(:nth-child(2)) {
+  border-right: 1px solid #333;
+}
+
+a {
+  text-decoration: none;
+  color: #474440;
+}
+.tab-content {
+  height: 80%;
+  width: 100%;
+}
+.tab-content h3 {
+  padding: 20px;
+}
+.tab-content hr {
+  width: 20%;
+  height: 2px;
+  margin-left: 20px;
+  background: #333;
+  border: none;
+}
+.tab-content p {
+  padding: 20px;
+}
+/* Contenus onglets */
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Identité carte */
+.identiter {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "info photo"
+    "description description";
+}
+.info {
+  grid-area: info;
+}
+.photo {
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.description {
+  grid-area: description;
+}
+
+/* A bientot */
+
+.container3 {
+  position: absolute;
+  width: 65%;
+  height: 25%;
+  background: #f1f1f1;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
